@@ -1,0 +1,13 @@
+# VS Code
+.vscode/
+
+# Java
+*.class
+*.jar
+out/
+target/
+
+# C
+*.o
+*.exe
+a.out
