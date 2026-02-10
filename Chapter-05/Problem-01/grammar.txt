@@ -1,0 +1,20 @@
+expr -> call ;
+expr -> IDENTIFIER ;
+expr -> NUMBER ;
+
+call -> call accessor ;
+call -> primary accessor ;
+
+accessor -> "(" arguments ")" ;
+accessor -> "." IDENTIFIER ;
+
+arguments -> arg_list ;
+arguments -> ;
+
+arg_list -> expr next_arg ;
+
+next_arg -> "," expr next_arg ;
+next_arg -> ;
+
+primary -> IDENTIFIER ;
+primary -> NUMBER ;
